@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "oc-kawaii-mode",
+  "version": "0.1.0",
+  "description": "Extremely kawaii personality and TUI plugin for OpenCode. Soft, sparkly, encouraging — still precise. (｡•ᴗ•｡)♡",
+  "keywords": [
+    "cute",
+    "kawaii",
+    "opencode",
+    "opencode-plugin",
+    "theme",
+    "tui"
+  ],
+  "homepage": "https://github.com/nexxel/oc-kawaii-mode#readme",
+  "bugs": {
+    "url": "https://github.com/nexxel/oc-kawaii-mode/issues"
+  },
+  "license": "MIT",
+  "author": "Shoubhit Dash (nexxel)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nexxel/oc-kawaii-mode.git"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "server.ts",
+    "tui.tsx",
+    "prompt.txt",
+    "kawaii-mode.json"
+  ],
+  "type": "module",
+  "exports": {
+    "./server": {
+      "import": "./server.ts",
+      "config": {
+        "enabled": true,
+        "mode": "append"
+      }
+    },
+    "./tui": {
+      "import": "./tui.tsx",
+      "config": {
+        "enabled": true,
+        "set_theme": true,
+        "sidebar": true,
+        "tips": true
+      }
+    }
+  },
+  "scripts": {
+    "fmt": "oxfmt --write .",
+    "fmt:check": "oxfmt --check ."
+  },
+  "devDependencies": {
+    "oxfmt": "0.41.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "*",
+    "@opentui/core": "*",
+    "@opentui/solid": "*",
+    "solid-js": "*"
+  },
+  "engines": {
+    "opencode": ">=1.3.14"
+  }
+}
