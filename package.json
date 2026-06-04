@@ -11,15 +11,15 @@
     "theme",
     "tui"
   ],
-  "homepage": "https://github.com/nexxel/oc-kawaii-mode#readme",
+  "homepage": "https://github.com/nexxeln/oc-kawaii-mode#readme",
   "bugs": {
-    "url": "https://github.com/nexxel/oc-kawaii-mode/issues"
+    "url": "https://github.com/nexxeln/oc-kawaii-mode/issues"
   },
   "license": "MIT",
   "author": "Shoubhit Dash (nexxel)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nexxel/oc-kawaii-mode.git"
+    "url": "git+https://github.com/nexxeln/oc-kawaii-mode.git"
   },
   "files": [
     "README.md",
